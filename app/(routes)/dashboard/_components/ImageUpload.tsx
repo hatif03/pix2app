@@ -49,7 +49,7 @@ function ImageUpload() {
         setLoading(true);
         //Save Image to Firebase
         const fileName = Date.now() + '.png';
-        const imageRef = ref(storage, "Wireframe_To_Code/" + fileName);
+        const imageRef = ref(storage, "pix2app/" + fileName);
         await uploadBytes(imageRef, file).then(resp => {
             console.log("Image Uploaded...")
         });
