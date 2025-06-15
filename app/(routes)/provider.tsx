@@ -18,8 +18,6 @@ function DashboardProvider({
 
     useEffect(() => {
         if (!user?.user && user.user) return router.replace('/')
-
-
         user?.user && checkUser()
 
     }, [user])
