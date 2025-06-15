@@ -40,19 +40,19 @@ export default {
 
     AiModelList: [
         {
-            name: 'Gemini Google',
-            icon: '/google.png',
-            modelName: 'google/gemini-2.0-flash-001'
+            name: 'Qwen',
+            icon: '/qwen.png',
+            modelName: 'meta-llama/llama-4-maverick-17b-128e-instruct-fp8'
         },
         {
             name: 'llama By Meta',
             icon: '/meta.png',
-            modelName: 'google/gemini-2.0-flash-001'
+            modelName: 'meta-llama/llama-4-maverick-17b-128e-instruct-fp8'
         },
         {
             name: 'Deepkseek',
             icon: '/deepseek.png',
-            modelName: 'qwen/qwen-turbo'
+            modelName: 'meta-llama/llama-4-maverick-17b-128e-instruct-fp8'
         }
     ],
     DEPENDANCY: {

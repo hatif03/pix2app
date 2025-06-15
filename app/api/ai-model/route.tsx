@@ -2,8 +2,8 @@ import Constants from "@/data/Constants";
 import { NextRequest } from "next/server";
 import OpenAI from "openai"
 const openai = new OpenAI({
-    baseURL: "https://openrouter.ai/api/v1",
-    apiKey: process.env.OPENROUTER_AI_API_KEY,
+    baseURL: "https://api.novita.ai/v3/openai",
+    apiKey: process.env.NOVITA_AI_API_KEY,
 
 })
 export const maxDuration = 300;
@@ -16,7 +16,7 @@ export async function POST(req: NextRequest) {
     const modelName = ModelObj?.modelName;
     console.log(modelName);
     const response = await openai.chat.completions.create({
-        model: modelName ?? 'google/gemini-2.0-pro-exp-02-05:free',
+        model: modelName ?? 'meta-llama/llama-4-maverick-17b-128e-instruct-fp8',
         stream: true,
         messages: [
             {
