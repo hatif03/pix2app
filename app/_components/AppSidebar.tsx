@@ -44,7 +44,7 @@ export function AppSidebar() {
                     <div className='flex items-center gap-2'>
                         <Image src={'/logo.svg'} alt='logo' width={100} height={100}
                             className='w-[40px] h-[40px]' />
-                        <h2 className='font-bold text-lg'>Wireframe to Code</h2>
+                        <h2 className='font-bold text-lg'>pix2app</h2>
                     </div>
                     <h2 className='text-sm text-gray-400 text-center'>Build Awesome</h2>
                 </div>
@@ -70,7 +70,7 @@ export function AppSidebar() {
                 </SidebarGroup>
             </SidebarContent>
             <SidebarFooter>
-                <h2 className='p-2 text-gray-400 text-sm'>Copyright @Tubeguruji</h2>
+                <h2 className='p-2 text-gray-400 text-sm'>Built with TraeAI</h2>
             </SidebarFooter>
         </Sidebar>
     )
